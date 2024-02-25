@@ -16,7 +16,7 @@ func main() {
 	arg := os.Args[1]
 
 	if len(os.Args) < 1 {
-		fmt.Println("please added filename")
+		fmt.Println("please add filename")
 		os.Exit(1)
 	}
 
