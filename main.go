@@ -13,12 +13,12 @@ func check(e error) {
 
 func main() {
 
-	arg := os.Args[1]
-
-	if len(os.Args) < 1 {
+	if len(os.Args[0:]) < 2 {
 		fmt.Println("please add filename")
 		os.Exit(1)
 	}
+
+	arg := os.Args[1]
 
 	dat, err := os.ReadFile(arg)
 	check(err)
